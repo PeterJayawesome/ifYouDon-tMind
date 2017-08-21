@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Can I have the time?</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    console.log("use time(hour, minute, period) to ask me time!");
+    function time(hour, minute, period= "AM"){
+      if(minute >= 30){
+        if(period =="AM"){
+          console.log("it's almost ",hour+1,"in the morning.");
+        }
+        else if (period == "PM") {
+          console.log("it's almost ",hour+1,"in the evening.");
+        }
+        else{
+          console.log("Please give me a correct period");
+        }
+      }
+      else if(minute < 30){
+        if(period = "AM"){
+          console.log("it's just after ",hour,"in the morning.");
+        }
+        else if (period = "PM") {
+          console.log("it's just after ",hour,"in the evening.");
+        }
+        else{
+          console.log("Please give me a correct period");
+        }
+      }
+    }
+
+
+    </script>
+  </body>
+</html>
